@@ -8,7 +8,12 @@ fANOVA это функциональное ANOVA разложение, где м
 
 Самое интересное, что это может быть функция, которую выучила та или иная модель, например RF или нейросеть. И задача fANOVA в том, чтобы разложить эту функцию на
 $$
-f(X)=f_0+\sum_i f_i(x_i)+\sum_{i<j}f_{ij}(x_i,x_j)+\sum_{i<j<k}f_{ijk}(x_i,x_j,x_k)+\cdots
+f(X) =
+f_0
++ \sum_{i=1}^{d} f_i(x_i)
++ \sum_{i \lt j} f_{ij}(x_i,x_j)
++ \sum_{i \lt j \lt k} f_{ijk}(x_i,x_j,x_k)
++ \cdots
 $$,
 где $f_0$ - среднее значение функции, $f_i(x_i)$ - главный эффект признака $x_i$, $f_{ij}(x_i,x_j)$ - парное взаимодействие и т.д.
 
@@ -22,7 +27,7 @@ $$
 Нормированная энергия:
 
 $$
-E_S=\frac{V_S}{\operatorname{Var}(f(X))}.
+E_S=\frac{V_S}{Var(f(X))}.
 $$
 
 Для независимых ортогональных признаков верно:
@@ -114,12 +119,22 @@ $$
 
 признаки имеют совместное нормальное распределение:
 
+
 $$
-\begin{pmatrix}X_1\\X_2\end{pmatrix}
+\begin{pmatrix}
+X_1 \\
+X_2
+\end{pmatrix}
 \sim
-\mathcal N\left(
-\begin{pmatrix}0\\0\end{pmatrix},
-\begin{pmatrix}1&\rho\\\rho&1\end{pmatrix}
+\mathcal{N}\left(
+\begin{pmatrix}
+0 \\
+0
+\end{pmatrix},
+\begin{pmatrix}
+1 & \rho \\
+\rho & 1
+\end{pmatrix}
 \right)
 $$
 При этом: $X_2=\rho X_1+\sqrt{1-\rho^2}Z, Z\sim\mathcal N(0,1),$ где $Z$ независим от $X_1$
@@ -136,9 +151,9 @@ $$
 \hat f(x_1,x_2)=\rho x_1^2
 $$
 
-Ошибка модели: $\operatorname{MSE}=\mathbb E[(X_1X_2-\rho X_1^2)^2]=\mathbb E[X_1^2(X_2-\rho X_1)^2]$
+Ошибка модели: $MSE=\mathbb E[(X_1X_2-\rho X_1^2)^2]=\mathbb E[X_1^2(X_2-\rho X_1)^2]$
 
-Но т.к. $X_2-\rho X_1=\sqrt{1-\rho^2}Z$, то $\operatorname{MSE}=(1-\rho^2)\mathbb E[X_1^2Z^2]=(1-\rho^2)\mathbb E[X_1^2]\mathbb E[Z^2]=1-\rho^2$
+Но т.к. $X_2-\rho X_1=\sqrt{1-\rho^2}Z$, то $MSE=(1-\rho^2)\mathbb E[X_1^2Z^2]=(1-\rho^2)\mathbb E[X_1^2]\mathbb E[Z^2]=1-\rho^2$
 
 Итак, найдем что будет выдавать ANOVA для истинной функции $f=x_1x_2$: \
 $v_\varnothing^M=\mathbb E_Q[X_1X_2]=0,$ \
@@ -164,11 +179,9 @@ $\hat f_{12}^M=\hat v_{12}^M-\hat v_1^M-\hat v_2^M+\hat v_\varnothing^M=\rho x_1
 Итак:
 
 $$
-
 f_{12}^{M,\mathrm{Truth}}=x_1x_2,
 \qquad
 f_{12}^{M,\mathrm{Model}}=0.
-
 $$
 
 что мы и наблюдаем на графиках
