@@ -10,45 +10,45 @@
 
 ## Итак, сначала Частота:
 
-![alt text](image-33.png)
+![alt text](images/image-33.png)
 
-![alt text](image-34.png)
+![alt text](images/image-34.png)
 
-![alt text](image-35.png)
+![alt text](images/image-35.png)
 
-![alt text](image-36.png)
+![alt text](images/image-36.png)
 
-![alt text](image-37.png)
+![alt text](images/image-37.png)
 
 Видим, что RIT с методом Gain C сохраняет взаимодействие в топе для всех количеств копий, в то время
 как TreeSHAP и нейросеть меняют лидера на 8 копиях и дают больше баллов другим взаимодействиям
 
 ## И Толщина вытеснения
 
-![alt text](image-38.png)
+![alt text](images/image-38.png)
 
-![alt text](image-39.png)
+![alt text](images/image-39.png)
 
-![alt text](image-40.png)
+![alt text](images/image-40.png)
 
-![alt text](image-41.png)
+![alt text](images/image-41.png)
 
-![alt text](image-42.png)
+![alt text](images/image-42.png)
 
 Видим схожую картину, но на 8 копиях в топ проходит другое взаимодействие, хотя и с небольшим
 отрывом
 
 ## Посмотрим, что на синтетике, копируем $x_1$:
 
-![alt text](image-43.png)
+![alt text](images/image-43.png)
 
-![alt text](image-44.png)
+![alt text](images/image-44.png)
 
-![alt text](image-45.png)
+![alt text](images/image-45.png)
 
-![alt text](image-46.png)
+![alt text](images/image-46.png)
 
-![alt text](image-47.png)
+![alt text](images/image-47.png)
 
 Здесь сложно сказать, что какой-то метод лучше или хуже, но с точностью можно сказать, что CART +
 Gain C теряет взаимодействие.
@@ -85,26 +85,26 @@ $$
 
 ### Airfoil, Частота
 
-![alt text](image-48.png)
+![alt text](images/image-48.png)
 
-![alt text](image-49.png)
+![alt text](images/image-49.png)
 
 ### Airfoil, Толщина вытеснения
 
-![alt text](image-50.png)
+![alt text](images/image-50.png)
 
-![alt text](image-51.png)
+![alt text](images/image-51.png)
 
 ### $x_1\times x_2$, синтетика
 
-![alt text](image-52.png)
+![alt text](images/image-52.png)
 
-![alt text](image-53.png)
+![alt text](images/image-53.png)
 
 Также посчитаем, сколько процентов исходного балла сохраняется у лучшей пары оригинал или копия ×
 второй признак:
 
-![alt text](image-54.png)
+![alt text](images/image-54.png)
 
 | Что копируем                | Gain CART | Gain RIT | TreeSHAP CART | TreeSHAP RIT | NID   |
 | --------------------------- | --------: | -------: | ------------: | -----------: | ----: |

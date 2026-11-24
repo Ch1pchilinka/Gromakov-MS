@@ -11,7 +11,7 @@
 4. Triple. $x_1 \times x_2 \times x_3$
 5. Sin Product. $\sin{(3\times x_1 \times x_2)}$
 6. Squre Sum. $y = (x_1 + x_2)^2$
-7. Threshhold. $y = (x_1 > 0) \land (x_2 > 0) \land (x_3 > 0)$
+7. Threshhold. $y = (x_1 > 0) \& (x_2 > 0) \& (x_3 > 0)$
 8. Fourth. $y = 5\times x_1 + x_2 \times x_3 \times x_4 \times x_5$
 
 **Реальные данные:**
@@ -22,48 +22,48 @@
 # СИНТЕТИКА
 
 ## КАЧЕСТВО В ЗАВИСИМОСТИ ОТ ЧИСЛА КОПИЙ
-![alt text](image-98.png)
+![alt text](images/image-98.png)
 
 **Вывод:** копии практически не влияют на качество предсказания.
 
 ## ВАЖНОСТЬ В ЗАВИСИМОСТИ ОТ ЧИСЛА КОПИЙ
-![alt text](image-99.png)
-![alt text](image-100.png)
-![alt text](image-101.png)
-![alt text](image-102.png)
-![alt text](image-103.png)
-![alt text](image-104.png)
-![alt text](image-105.png)
-![alt text](image-106.png)
+![alt text](images/image-99.png)
+![alt text](images/image-100.png)
+![alt text](images/image-101.png)
+![alt text](images/image-102.png)
+![alt text](images/image-103.png)
+![alt text](images/image-104.png)
+![alt text](images/image-105.png)
+![alt text](images/image-106.png)
 
 **Вывод:** как и ожидалось, важность перераспределяется между копиями.
 
 ## СИЛА ВЗАИМОДЕЙСТВИЯ В ЗАВИСИМОСТИ ОТ ЧИСЛА КОПИЙ
-![alt text](image-107.png)
-![alt text](image-108.png)
-![alt text](image-109.png)
-![alt text](image-110.png)
-![alt text](image-111.png)
-![alt text](image-112.png)
-![alt text](image-113.png)
-![alt text](image-114.png)
+![alt text](images/image-107.png)
+![alt text](images/image-108.png)
+![alt text](images/image-109.png)
+![alt text](images/image-110.png)
+![alt text](images/image-111.png)
+![alt text](images/image-112.png)
+![alt text](images/image-113.png)
+![alt text](images/image-114.png)
 
 **Вывод:** как и ожидалось, с повышением числа копий сила взаимодействия уменьшается между копируемым признаком и его парой, например при 8 копиях в Weak Pair, взаимодействие становится слабее слабой пары. Интересно, что получилось в примерах с синусом произведения, квадрате суммы и Threshhold. Там добавление копии вывели в лидеры взаимодействие $x_1\times z_j$, которого на самом деле нет, это артефакт копирования признаков. Для этих вариантов проведем дополнительное сравнение с RIT, а также попробуем объяснить этот эффект.
 
 # РЕАЛЬНЫЕ ДАННЫЕ
 ## ВАЖНОСТЬ В ЗАВИСИМОСТИ ОТ ЧИСЛА КОПИЙ
-![alt text](image-115.png)
-![alt text](image-117.png)
-![alt text](image-119.png)
-![alt text](image-121.png)
+![alt text](images/image-115.png)
+![alt text](images/image-117.png)
+![alt text](images/image-119.png)
+![alt text](images/image-121.png)
 
 **Вывод:** аналогично синтетике важность перераспределяется между копиями.
 
 ## СИЛА ВЗАИМОДЕЙСТВИЯ В ЗАВИСИМОСТИ ОТ ЧИСЛА КОПИЙ
-![alt text](image-116.png)
-![alt text](image-118.png)
-![alt text](image-120.png)
-![alt text](image-122.png)
+![alt text](images/image-116.png)
+![alt text](images/image-118.png)
+![alt text](images/image-120.png)
+![alt text](images/image-122.png)
 
 **Вывод:** сила взаимодействия в основном падает, но это не правило.
 
@@ -71,8 +71,8 @@
 
 Итак, мы наблюдали эффект, когда при копировании $x_1$, он начинал взаимодействовать с $z_j$, при чем это было одно из топовых взаимодействий. Для начала сравним, как с этим же экспериментом справится RIT:
 
-![alt text](image-123.png)
-![alt text](image-124.png)
+![alt text](images/image-123.png)
+![alt text](images/image-124.png)
 
 
 

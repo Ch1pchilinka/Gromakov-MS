@@ -18,71 +18,71 @@
 
 **Подбор alpha:**
 
-![Подбор alpha](image-56.png)
+![Подбор alpha](images/image-56.png)
 
 **Взаимодействия:**
 
-![Взаимодействия](image-57.png)
+![Взаимодействия](images/image-57.png)
 
 **Важности:**
 
-![Важности](image-58.png)
+![Важности](images/image-58.png)
 
 ### 1 копия:
 
 **Подбор alpha:**
 
-![alt text](image-59.png)
+![alt text](images/image-59.png)
 
 **Взаимодействия:**
 
-![alt text](image-60.png)
+![alt text](images/image-60.png)
 
 **Важности:**
 
-![alt text](image-61.png)
+![alt text](images/image-61.png)
 
 ### 2 копии:
 
 **Подбор alpha:**
 
-![alt text](image-62.png)
+![alt text](images/image-62.png)
 
 **Взаимодействия:**
 
-![alt text](image-63.png)
+![alt text](images/image-63.png)
 
 **Важности:**
 
-![alt text](image-64.png)
+![alt text](images/image-64.png)
 
 ### 4 копии:
 
 **Подбор alpha:**
 
-![alt text](image-65.png)
+![alt text](images/image-65.png)
 
 **Взаимодействия:**
 
-![alt text](image-66.png)
+![alt text](images/image-66.png)
 
 **Важности:**
 
-![alt text](image-67.png)
+![alt text](images/image-67.png)
 
 ### 8 копий:
 
 **Подбор alpha:**
 
-![alt text](image-68.png)
+![alt text](images/image-68.png)
 
 **Взаимодействия:**
 
-![alt text](image-69.png)
+![alt text](images/image-69.png)
 
 **Важности:**
 
-![alt text](image-70.png)
+![alt text](images/image-70.png)
 
 ### Вывод:
 
@@ -96,71 +96,71 @@ TreeSHAP выделяет другое взаимодействие выше к�
 
 **Подбор alpha:**
 
-![Подбор alpha](image-56.png)
+![Подбор alpha](images/image-56.png)
 
 **Взаимодействия:**
 
-![alt text](image-71.png)
+![alt text](images/image-71.png)
 
 **Важности:**
 
-![alt text](image-72.png)
+![alt text](images/image-72.png)
 
 ### 1 копия:
 
 **Подбор alpha:**
 
-![alt text](image-73.png)
+![alt text](images/image-73.png)
 
 **Взаимодействия:**
 
-![alt text](image-74.png)
+![alt text](images/image-74.png)
 
 **Важности:**
 
-![alt text](image-75.png)
+![alt text](images/image-75.png)
 
 ### 2 копии:
 
 **Подбор alpha:**
 
-![alt text](image-76.png)
+![alt text](images/image-76.png)
 
 **Взаимодействия:**
 
-![alt text](image-77.png)
+![alt text](images/image-77.png)
 
 **Важности:**
 
-![alt text](image-78.png)
+![alt text](images/image-78.png)
 
 ### 4 копии:
 
 **Подбор alpha:**
 
-![alt text](image-79.png)
+![alt text](images/image-79.png)
 
 **Взаимодействия:**
 
-![alt text](image-80.png)
+![alt text](images/image-80.png)
 
 **Важности:**
 
-![alt text](image-81.png)
+![alt text](images/image-81.png)
 
 ### 8 копий:
 
 **Подбор alpha:**
 
-![alt text](image-82.png)
+![alt text](images/image-82.png)
 
 **Взаимодействия:**
 
-![alt text](image-83.png)
+![alt text](images/image-83.png)
 
 **Важности:**
 
-![alt text](image-84.png)
+![alt text](images/image-84.png)
 
 ### Вывод:
 
@@ -168,15 +168,15 @@ TreeSHAP выделяет другое взаимодействие выше к�
 
 ## Посчитаем также некоторые статистики по полученным взаимодействиям:
 
-![alt text](image-85.png)
+![alt text](images/image-85.png)
 
-![alt text](image-86.png)
+![alt text](images/image-86.png)
 
 Мне показалось это странным, что RIT не сохраняет важность признаков в топе, поэтому я решил переделать
 эксперимент, выяснив причину этого. Оказалось все дело в параметрах RIT, а именно subforest_importance и
 normalize_importance. Вот пример на синтетике:
 
-![alt text](image-87.png)
+![alt text](images/image-87.png)
 
 У меня было до этого subforest_importance - False, normalize_importance = True.
 
@@ -189,31 +189,31 @@ False. Но на графики взаимодействий это не пов�
 
 **Важности:**
 
-![alt text](image-88.png)
+![alt text](images/image-88.png)
 
 ### 1 копия:
 
 **Важности:**
 
-![alt text](image-89.png)
+![alt text](images/image-89.png)
 
 ### 2 копии:
 
 **Важности:**
 
-![alt text](image-90.png)
+![alt text](images/image-90.png)
 
 ### 4 копии:
 
 **Важности:**
 
-![alt text](image-91.png)
+![alt text](images/image-91.png)
 
 ### 8 копий:
 
 **Важности:**
 
-![alt text](image-92.png)
+![alt text](images/image-92.png)
 
 ## Фиксируем Частоту и копируем Толщину вытестения.
 
@@ -221,28 +221,28 @@ False. Но на графики взаимодействий это не пов�
 
 **Важности:**
 
-![alt text](image-93.png)
+![alt text](images/image-93.png)
 
 ### 1 копия:
 
 **Важности:**
 
-![alt text](image-94.png)
+![alt text](images/image-94.png)
 
 ### 2 копии:
 
 **Важности:**
 
-![alt text](image-95.png)
+![alt text](images/image-95.png)
 
 ### 4 копии:
 
 **Важности:**
 
-![alt text](image-96.png)
+![alt text](images/image-96.png)
 
 ### 8 копий:
 
 **Важности:**
 
-![alt text](image-97.png)
+![alt text](images/image-97.png)

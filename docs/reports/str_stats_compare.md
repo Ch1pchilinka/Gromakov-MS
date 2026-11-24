@@ -15,11 +15,11 @@ CV 3 фолда по RMSE, loss на тесте - квадратичный
 
 ## Выбор $\alpha$:
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 ## Качетво подобранных моделей:
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 ## Теперь способы, которые сравниваем:
 
@@ -33,17 +33,17 @@ CV 3 фолда по RMSE, loss на тесте - квадратичный
 - **D Gain появления набора:** набор признаков получает Gain только тех сплитов, которые впервые собрали его целиком на данном пути (2 версии)
 - **E:** насколько меньше разброс в листе, чем в корне, с учётом размера листа ($S(l) = \frac{W_l}{W_{root}}(I_{root} - I_{l})$), весь этот вклад получает полный набор признаков пути к листу (4 версии, exact/subset sum/normalised)
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 **В А** видно, что RIT не увидел взаимодействия во всех 12 способах, в то время как CART везде выделил пару $x_1, x_2$
 
@@ -64,8 +64,8 @@ CV 3 фолда по RMSE, loss на тесте - квадратичный
 - Отрыв = 100 * (правильный − сильнейший ложный) / (правильный + сильнейший ложный)
 - Разброс = средний по задачам и моделям разброс чистоты между seed
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 
 **Исходя из всего этого выбираем в качестве способа - C, сумму Gain по деревьям**
